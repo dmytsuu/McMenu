@@ -22,7 +22,7 @@ export default {
     products () { return this.$store.getters.foundProducts }
   },
   async created () {
-    let res = await axios.get('http://localhost:3001/McMenu')
+    let res = await axios.get('http://localhost:3000/products/index')
     let products = res.data.map(product => {
       return { ...product, count: 0 }
     })
