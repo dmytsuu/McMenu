@@ -1,4 +1,4 @@
-# McMenu-web
+# McMenu
 
 ### Project setup
 ```
