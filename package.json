@@ -8,6 +8,7 @@
     "axios": "^0.19.1",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.2.2",
+    "sweetalert2": "^9.6.1",
     "turbolinks": "^5.2.0",
     "vue": "^2.6.11",
     "vue-loader": "^15.8.3",

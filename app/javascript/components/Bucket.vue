@@ -14,7 +14,7 @@
             </tr>
           </tbody>
         </table>
-        <button class="btn btn-success btn-block" @click="submit" >Order {{ totalPrice }} ₴</button>
+        <button class="btn btn-success btn-block" @click="submit" :disabled="isSubmitDisabled">{{ submitButtonText }}</button>
       </div>
     </div>
   </div>
@@ -23,22 +23,45 @@
 <script>
 
 import { mapGetters } from 'vuex'
+import Swal from 'sweetalert2'
 import axios from 'axios'
 
 export default {
   name: 'Bucket',
   data () {
-    return { isBucketShown: false }
+    return {
+      isBucketShown: false,
+      isSubmitDisabled: false
+    }
   },
   methods: {
     toggleBucket () { this.isBucketShown = !this.isBucketShown },
     async submit () {
-      let res = await axios.post('http://localhost:3000/buckets/create', this.bucketProducts)
+      this.isSubmitDisabled = true;
+      await axios.post('http://localhost:3000/buckets/create', this.bucketProducts).then(res => {
+        Swal.fire(
+          'Awesome!',
+          'Your order is created',
+          'success'
+        )
+      }).catch(err => {
+        Swal.fire(
+          'Oops...',
+          'Something went wrong!',
+          'error'
+        )
+      })
+      this.isSubmitDisabled = false
     }
   },
-  computed: mapGetters([
-    'bucketProducts', 'totalPrice'
-  ])
+  computed: {
+    ...mapGetters([
+      'bucketProducts', 'totalPrice'
+    ]),
+    submitButtonText () {
+      return this.isSubmitDisabled ? 'Submiting' : `Order ${this.totalPrice} ₴`
+    }
+  }
 }
 </script>
 
