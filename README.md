@@ -1,24 +1,17 @@
-# README
+# McMenu-web
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Project setup
+```
+git clone git@github.com:dmytsuu/McMenu.git
+git clone https://github.com/dmytsuu/McMenu.git
 
-Things you may want to cover:
+cd McMenu
 
-* Ruby version
+bundle install
+yarn install
+npm install -g json-server
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+json-server public/mcdonalds.json --port=3001
+rails s
+./bin/webpack-dev-server
+```
