@@ -36,6 +36,7 @@ export default {
     }
   },
   methods: {
+    // TODO: refactor this shit
     toggleBucket () { this.isBucketShown = !this.isBucketShown },
     async submit () {
       this.isSubmitDisabled = true;

@@ -1,10 +1,12 @@
 class BucketsController < ApplicationController
+  # TODO: refactor this shit anyway
   def create
     bucket = Bucket.create
+    records = []
     params['_json'].each do |product|
-      BucketProduct.create(product_id: product['id'], bucket: bucket, quantity: product['quantity'])
+      records << BucketProduct.create(product_id: product['id'], bucket: bucket, quantity: product['quantity'])
     end
-
-    render json: {}, status: 201
+    status = records.present? ? 201 : 422
+    render json: {}, status: status
   end
 end
