@@ -1,15 +1,15 @@
 {
   "menus": [
-    { "name":"Біг Мак Меню", "price": 105.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_BigMac.png" },
-    { "name":"Біг Тейсті Меню", "price": 139.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_BigTasty.png" },
-    { "name":"Бургер з куркою та медовою гірчицею Меню", "price": 105.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_Burger_with_chicken_and_honey_mustard.png" },
-    { "name":"Бургер зі свининою та солоними огірками Меню", "price": 112.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_Burge_with_pork_and_pickles.png" },
-    { "name":"Маестро. Класік Біф Меню", "price": 141.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Maestro%20Classic%20Beef.png" },
-    { "name":"Чікен Макнагетс 6шт Меню", "price": 96.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.ChickenMcNuggets6.png" },
-    { "name":"Чікен Макнагетс 9шт Меню", "price":114.0 , "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.ChickenMcNuggets6.png" },
-    { "name":"МакЧікен Меню", "price": 100.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_McChicken.png" },
-    { "name": "Дабл Чізбургер Меню", "price": 97.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_DoubleCheeseburger.png"},
-    { "name": "Філе-о-Фіш Меню", "price": 100.0, "link":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_File-o-Fish.png" }
+    { "name":"Біг Мак Меню", "price": 105.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_BigMac.png" },
+    { "name":"Біг Тейсті Меню", "price": 139.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_BigTasty.png" },
+    { "name":"Бургер з куркою та медовою гірчицею Меню", "price": 105.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_Burger_with_chicken_and_honey_mustard.png" },
+    { "name":"Бургер зі свининою та солоними огірками Меню", "price": 112.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_Burge_with_pork_and_pickles.png" },
+    { "name":"Маестро. Класік Біф Меню", "price": 141.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Maestro%20Classic%20Beef.png" },
+    { "name":"Чікен Макнагетс 6шт Меню", "price": 96.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.ChickenMcNuggets6.png" },
+    { "name":"Чікен Макнагетс 9шт Меню", "price":114.0 , "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.ChickenMcNuggets6.png" },
+    { "name":"МакЧікен Меню", "price": 100.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_McChicken.png" },
+    { "name": "Дабл Чізбургер Меню", "price": 97.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_DoubleCheeseburger.png"},
+    { "name": "Філе-о-Фіш Меню", "price": 100.0, "image":"https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/thumb.Sdwch_File-o-Fish.png" }
   ],
   "burgers": [
     {
