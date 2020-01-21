@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  def index
+  protect_from_forgery with: :null_session
 
-  end
+  def index; end
 end

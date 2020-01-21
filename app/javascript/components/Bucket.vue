@@ -14,7 +14,7 @@
             </tr>
           </tbody>
         </table>
-        <button class="btn btn-success btn-block">Order {{ totalPrice }} ₴</button>
+        <button class="btn btn-success btn-block" @click="submit" >Order {{ totalPrice }} ₴</button>
       </div>
     </div>
   </div>
@@ -23,6 +23,7 @@
 <script>
 
 import { mapGetters } from 'vuex'
+import axios from 'axios'
 
 export default {
   name: 'Bucket',
@@ -30,7 +31,10 @@ export default {
     return { isBucketShown: false }
   },
   methods: {
-    toggleBucket () { this.isBucketShown = !this.isBucketShown }
+    toggleBucket () { this.isBucketShown = !this.isBucketShown },
+    async submit () {
+      let res = await axios.post('http://localhost:3000/buckets/create', this.bucketProducts)
+    }
   },
   computed: mapGetters([
     'bucketProducts', 'totalPrice'
