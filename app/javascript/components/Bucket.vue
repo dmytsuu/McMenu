@@ -54,7 +54,10 @@ export default {
       })
       this.isSubmitDisabled = false
     },
-    resetBucket () { this.$store.commit('resetBucket') }
+    resetBucket () {
+      this.$store.commit('resetBucket'),
+      this.isBucketShown = false
+    }
   },
   computed: {
     ...mapGetters([
