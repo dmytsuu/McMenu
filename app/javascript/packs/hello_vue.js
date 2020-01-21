@@ -6,17 +6,23 @@
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
 import Vue from 'vue'
-import App from '../app.vue'
+import App from '../App.vue'
+import router from './router'
+import store from './store'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
+    router,
+    store,
     render: h => h(App)
-  }).$mount()
+  }).$mount('#app')
   document.body.appendChild(app.$el)
-
-  console.log(app)
 })
-
 
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
