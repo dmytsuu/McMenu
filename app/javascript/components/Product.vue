@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="d-flex flex-column justify-content-around align-items-center">
-    <img :src="link" alt="picture" class="image cursor-pointer">
+    <img :src="image" alt="picture" class="image cursor-pointer">
     <p>{{ name }}</p>
     <p class="hryvna">{{ price }} <span class="badge badge-success">{{ count }}</span> </p>
     <div class="buttons btn-group w-100">
@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'Product',
-  props: ['id', 'name', 'price', 'link', 'count'],
+  props: ['id', 'name', 'price', 'image', 'count'],
   methods: {
     increment () { this.$store.commit('changeProductCount', { id: this.id, count: this.count + 1 }) },
     decrement () { this.$store.commit('changeProductCount', { id: this.id, count: this.count - 1 }) }

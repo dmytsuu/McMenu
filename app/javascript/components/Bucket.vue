@@ -7,7 +7,7 @@
         <table class="table">
           <tbody>
             <tr v-for="product in bucketProducts" :key="product.id" class="text-left table-row">
-              <td><img :src="product.link" alt="thumbnail" class="thumbnail"></td>
+              <td><img :src="product.image" alt="thumbnail" class="thumbnail"></td>
               <td>{{ product.name }}</td>
               <td><span class="badge badge-success p-3">{{ product.count }}</span></td>
               <td>{{ product.price * product.count }}₴</td>
