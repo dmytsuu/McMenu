@@ -18,7 +18,11 @@ export default {
   },
   methods: {
     searchProducts () { this.$store.commit('setKeyword', this.searchKeyword) },
-    selectKind (kind) { this.$store.commit('setKind', kind) }
+    selectKind (kind) {
+      this.searchKeyword = ''
+      this.searchProducts()
+      this.$store.commit('setKind', kind)
+    }
   }
 }
 </script>
