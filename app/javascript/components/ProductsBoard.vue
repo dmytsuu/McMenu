@@ -2,7 +2,7 @@
   <div class="products-board container-fluid">
     <Bucket/>
     <div class="row">
-      <Product v-for="product in products"
+      <Product v-for="product in byKind"
                v-bind="product"
                :key="product.id"
                class="col-md-2 product"/>
@@ -19,7 +19,8 @@ export default {
   name: 'ProductsBoard',
   components: { Product, Bucket },
   computed: {
-    products () { return this.$store.getters.foundProducts }
+    products () { return this.$store.getters.foundProducts },
+    byKind () { return this.$store.getters.byKind }
   },
   async created () {
     let res = await axios.get('http://localhost:3000/products/index')
