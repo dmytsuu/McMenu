@@ -44,7 +44,6 @@ export default {
     width: 50px;
     height: 50px;
   }
-  .cursor-pointer { cursor: pointer; }
   .bucket-opened { width: 30vw !important; }
   .bucket {
     transition: width 0.5s;

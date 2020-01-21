@@ -22,7 +22,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .cursor-pointer { cursor: pointer; }
   .buttons { font-size: 2rem; }
   p { margin: 0; }
   .image {

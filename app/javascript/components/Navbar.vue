@@ -2,7 +2,7 @@
   <nav class="navbar flex-column fixed-top navbar-light bg-white justify-content-center">
     <input class="form-control product-search" placeholder="Find item" @input="searchProducts" v-model="searchKeyword">
     <ul class="nav mt-2">
-      <li v-for="kind in kinds" @click="selectKind(kind)" class="nav-item nav-link shadow-sm text-capitalize mr-2">{{ kind }}</li>
+      <li v-for="kind in kinds" @click="selectKind(kind)" class="nav-item nav-link shadow-sm text-capitalize cursor-pointer mr-2">{{ kind }}</li>
     </ul>
   </nav>
 </template>
