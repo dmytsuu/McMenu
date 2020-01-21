@@ -12,9 +12,7 @@ cd McMenu
 
 bundle install
 yarn install
-npm install -g json-server
 
-json-server public/mcdonalds.json --port=3001
 rails s
 ./bin/webpack-dev-server
 ```
