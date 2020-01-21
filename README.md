@@ -2,6 +2,8 @@
 
 ### Project setup
 ```
+You need to install mongodb server before this
+
 git clone git@github.com:dmytsuu/McMenu.git
 git clone https://github.com/dmytsuu/McMenu.git
 
