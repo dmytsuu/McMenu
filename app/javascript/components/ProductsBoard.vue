@@ -25,7 +25,7 @@ export default {
   async created () {
     let res = await axios.get('http://localhost:3000/products/index')
     let products = res.data.map(product => {
-      return { ...product, count: 0 }
+      return { ...product, quantity: 0 }
     })
     this.$store.commit('setProducts', products)
   }

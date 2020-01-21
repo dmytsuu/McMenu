@@ -9,12 +9,13 @@
             <tr v-for="product in bucketProducts" :key="product.id" class="text-left table-row">
               <td><img :src="product.image" alt="thumbnail" class="thumbnail"></td>
               <td>{{ product.name }}</td>
-              <td><span class="badge badge-success p-3">{{ product.count }}</span></td>
-              <td>{{ product.price * product.count }}₴</td>
+              <td><span class="badge badge-success p-3">{{ product.quantity }}</span></td>
+              <td>{{ product.price * product.quantity }}₴</td>
             </tr>
           </tbody>
         </table>
         <button class="btn btn-success btn-block" @click="submit" :disabled="isSubmitDisabled">{{ submitButtonText }}</button>
+        <button class="btn btn-danger btn-block" @click="resetBucket">Reset</button>
       </div>
     </div>
   </div>
@@ -52,7 +53,8 @@ export default {
         )
       })
       this.isSubmitDisabled = false
-    }
+    },
+    resetBucket () { this.$store.commit('resetBucket') }
   },
   computed: {
     ...mapGetters([

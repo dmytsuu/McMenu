@@ -13,9 +13,10 @@ export default new Vuex.Store({
     setKeyword (state, keyword) { state.searchKeyword = keyword },
     setKind (state, kind) { state.kind = kind },
     setProducts (state, products) { state.products = products },
+    resetBucket (state) { state.products.forEach(product => product.quantity = 0) },
     changeProductCount (state, item) {
       let product = state.products.find(product => product.id === item.id)
-      product.count = item.count
+      product.quantity = item.quantity
     }
   },
   getters: {
@@ -25,10 +26,10 @@ export default new Vuex.Store({
       })
     },
     bucketProducts: state => {
-      return state.products.filter(product => product.count > 0)
+      return state.products.filter(product => product.quantity > 0)
     },
     totalPrice: (state, getters) => {
-      let summs = getters.bucketProducts.map(product => product.count * product.price)
+      let summs = getters.bucketProducts.map(product => product.quantity * product.price)
       return summs.reduce((a, b) => a + b, 0)
     },
     byKind: (state, getters) => {
