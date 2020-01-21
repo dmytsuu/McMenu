@@ -12,6 +12,8 @@ cd McMenu
 
 bundle install
 yarn install
+rails db:create
+rails db:seed
 
 rails s
 ./bin/webpack-dev-server
