@@ -7,7 +7,7 @@
         <table class="table">
           <tbody>
             <tr v-for="product in bucketProducts" :key="product.id" class="text-left table-row">
-              <td><img :src="product.image" alt="thumbnail" class="thumbnail"></td>
+              <td><img :src="product.image || placeholder" alt="thumbnail" class="thumbnail"></td>
               <td>{{ product.name }}</td>
               <td><span class="badge badge-success p-3">{{ product.quantity }}</span></td>
               <td>{{ product.price * product.quantity }}₴</td>
@@ -32,7 +32,8 @@ export default {
   data () {
     return {
       isBucketShown: false,
-      isSubmitDisabled: false
+      isSubmitDisabled: false,
+      placeholder: 'https://img-global.cpcdn.com/recipes/5520605ad8c12747c2fbd83a362a03a16695fedbee0c05bd73d7a3049444b60f/1200x630cq70/photo.jpg'
     }
   },
   methods: {
