@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Navbar/>
-    <ProductsBoard class="mt-5"/>
+    <ProductsBoard/>
   </div>
 </template>
 

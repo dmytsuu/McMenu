@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .products-board { margin-top: 102px; }
   .product-search { width: 500px; }
   .product { height: 340px; }
 </style>
