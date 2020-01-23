@@ -1,6 +1,7 @@
 <template lang="html">
   <nav class="navbar flex-column fixed-top navbar-light bg-white justify-content-center">
     <input class="form-control product-search" placeholder="Find item" @input="searchProducts" v-model="searchKeyword">
+    <span v-if="username">Welcome {{ username }}</span>
     <ul class="nav mt-2">
       <li v-for="kind in kinds" @click="selectKind(kind)" class="nav-item nav-link shadow-sm text-capitalize cursor-pointer mr-2">{{ kind }}</li>
     </ul>
@@ -23,6 +24,9 @@ export default {
       this.searchProducts()
       this.$store.commit('setKind', kind)
     }
+  },
+  computed: {
+    username () { return this.$store.state.username }
   }
 }
 </script>

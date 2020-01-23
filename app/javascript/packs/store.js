@@ -7,10 +7,12 @@ export default new Vuex.Store({
   state: {
     products: [],
     kind: 'all',
-    searchKeyword: ''
+    searchKeyword: '',
+    username: ''
   },
   mutations: {
     setKeyword (state, keyword) { state.searchKeyword = keyword },
+    setUsername (state, username) { state.username = username },
     setKind (state, kind) { state.kind = kind },
     setProducts (state, products) { state.products = products },
     resetBucket (state) { state.products.forEach(product => product.quantity = 0) },

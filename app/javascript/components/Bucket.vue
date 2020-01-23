@@ -22,9 +22,9 @@
 
 <script>
 
-import { mapGetters } from 'vuex'
 import Swal from 'sweetalert2'
 import axios from 'axios'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Bucket',
@@ -40,7 +40,7 @@ export default {
     toggleBucket () { this.isBucketShown = !this.isBucketShown },
     async submit () {
       this.isSubmitDisabled = true;
-      await axios.post('http://localhost:3000/buckets/create', this.bucketProducts).then(res => {
+      await axios.post('http://localhost:3000/buckets/create', { products: this.bucketProducts, name: this.username }).then(res => {
         Swal.fire(
           'Awesome!',
           'Your order is created',
@@ -66,7 +66,8 @@ export default {
     ]),
     submitButtonText () {
       return this.isSubmitDisabled ? 'Submiting' : `Order ${this.totalPrice} ₴`
-    }
+    },
+    username () { return this.$store.state.username }
   }
 }
 </script>
