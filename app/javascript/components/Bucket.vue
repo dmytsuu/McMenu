@@ -1,6 +1,5 @@
 <template lang="html">
-  <div v-bind:class="{ 'bucket-opened': isBucketShown }" class="bucket container-fluid fixed rounded border bg-white">
-    <span @click="toggleBucket" class="close float-left pt-2 cursor-pointer">&times;</span>
+  <div @mouseenter="toggleBucket" @mouseleave="toggleBucket" v-bind:class="{ 'bucket-opened': isBucketShown }" class="bucket container-fluid fixed rounded border bg-white">
     <div v-bind:class="{ 'd-none': !isBucketShown }" class="row no-gutters flex-column align-items-center p-3">
       <div class="col">
         <h5 class="text-center">Bucket</h5>
