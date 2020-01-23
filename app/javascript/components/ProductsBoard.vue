@@ -1,5 +1,5 @@
 <template>
-  <div class="products-board container-fluid">
+  <div class="products-board container">
     <Bucket/>
     <div class="row">
       <Product v-for="product in byKind"
