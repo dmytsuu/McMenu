@@ -1,12 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VuexPersistence from 'vuex-persist'
 
 Vue.use(Vuex)
+
+const vuexLocal = new VuexPersistence({
+  storage: window.localStorage
+})
 
 export default new Vuex.Store({
   state: {
     products: [],
-    kind: 'all',
+    kind: 'All',
     searchKeyword: '',
     username: ''
   },
@@ -36,7 +41,8 @@ export default new Vuex.Store({
     },
     byKind: (state, getters) => {
       let result = getters.foundProducts.filter(product => product.kind === state.kind)
-      return state.kind === 'all' ? getters.foundProducts : result
+      return state.kind === 'All' ? getters.foundProducts : result
     }
-  }
+  },
+  plugins: [vuexLocal.plugin]
 })
