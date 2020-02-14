@@ -2,8 +2,6 @@
   <nav class="search-and-filters container-fluid sticky-top bg-white">
     <div class="row py-3">
       <div class="col bg-white rounded-smooth shadow h-100 p-3 d-flex align-items-center justify-space-between">
-        <!-- <ul class="navbar-nav flex-row">
-      </ul> -->
       <input class="form-control border-0" placeholder="Find item" @input="searchProducts" v-model="searchKeyword">
       <b-dropdown id="filter-dropdown"
                   variant="link"

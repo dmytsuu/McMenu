@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row align-items-start">
-      <ProductsBoard class="col col-md-8"/>
+      <ProductsBoard class="col col-lg-8"/>
       <Bucket class="col-md-4"/>
     </div>
     <NameModal/>

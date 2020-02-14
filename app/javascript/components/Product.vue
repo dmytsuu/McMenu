@@ -8,9 +8,13 @@
         <h5 class="font-weight-bold">{{ name }}</h5>
         <div class="d-flex justify-content-between align-items-center">
           <p class="price">{{ price }} грн.</p>
-          <div class="buttons btn-group">
-            <button @click="decrement" :disabled="!quantity" class="btn btn-danger">-</button>
-            <button @click="increment" class="btn btn-success">+</button>
+          <div class="buttons">
+            <button @click="decrement" :disabled="!quantity" class="btn btn-sm btn-danger rounded-smooth">
+              <b-icon icon="dash"></b-icon>
+            </button>
+            <button @click="increment" class="btn btn-sm btn-success rounded-smooth">
+              <b-icon icon="plus"></b-icon>
+            </button>
         </div>
         </div>
       </div>
@@ -20,8 +24,10 @@
 </template>
 
 <script>
+import { BIcon, BIconPlus, BIconDash } from 'bootstrap-vue'
 export default {
   name: 'Product',
+  components: { BIcon, BIconPlus, BIconDash },
   data () {
     // TODO: use constants
     return { placeholder: 'https://img-global.cpcdn.com/recipes/5520605ad8c12747c2fbd83a362a03a16695fedbee0c05bd73d7a3049444b60f/1200x630cq70/photo.jpg' }
