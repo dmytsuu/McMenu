@@ -1,7 +1,7 @@
 <template lang="html">
-  <div @mouseover="showBucket" @mouseleave="hideBucket" :class="{ 'bucket-opened': isBucketShown }" class="bucket container-fluid fixed rounded border bg-white">
-    <div v-bind:class="{ 'd-none': !isBucketShown }" class="row no-gutters flex-column align-items-center p-3">
-      <div class="col">
+  <div class="container-fluid sticky-top">
+    <div class="row my-3 no-gutters flex-column align-items-center rounded-smooth shadow-lg">
+      <div class="col p-3">
         <h5 class="text-center">Bucket</h5>
         <table class="table">
           <tbody>
@@ -30,15 +30,12 @@ export default {
   name: 'Bucket',
   data () {
     return {
-      isBucketShown: false,
       isSubmitDisabled: false,
       placeholder: 'https://img-global.cpcdn.com/recipes/5520605ad8c12747c2fbd83a362a03a16695fedbee0c05bd73d7a3049444b60f/1200x630cq70/photo.jpg'
     }
   },
   methods: {
     // TODO: refactor this shit
-    showBucket () { this.isBucketShown = true },
-    hideBucket () { setTimeout(() => this.isBucketShown = false, 500) },
     async submit () {
       this.isSubmitDisabled = true
       // TODO: use constants for url, refactor Swal
@@ -58,8 +55,7 @@ export default {
       this.isSubmitDisabled = false
     },
     resetBucket () {
-      this.$store.commit('resetBucket'),
-      this.isBucketShown = false
+      this.$store.commit('resetBucket')
     }
   },
   computed: {
@@ -75,15 +71,5 @@ export default {
   .thumbnail {
     width: 50px;
     height: 50px;
-  }
-  .bucket-opened { width: 30vw !important; }
-  .bucket {
-    transition: width 0.5s;
-    min-height: 40px;
-    width: 50px;
-    position: fixed;
-    top: 20%;
-    right: -10px;
-    z-index: 100;
   }
 </style>

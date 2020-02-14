@@ -1,12 +1,20 @@
 <template lang="html">
-  <div class="d-flex flex-column justify-content-around align-items-center">
-    <img :src="image || placeholder" alt="picture" class="image cursor-pointer">
-    <p>{{ name }}</p>
-    <p class="hryvna">{{ price }}</p>
-    <p>In bucket<span class="badge badge-success mx-1">{{ quantity }}</span></p>
-    <div class="buttons btn-group w-100">
-      <button @click="decrement" :disabled="!quantity" class="btn btn-danger">-</button>
-      <button @click="increment" class="btn btn-success">+</button>
+  <div class="container-fluid">
+    <div class="row flex-column rounded-smooth justify-content-center align-items-center mx-1 p-3 shadow h-100 flex-nowrap">
+      <div class="col-7">
+        <img :src="image || placeholder" alt="picture" class="w-100">
+      </div>
+      <div class="align-self-start d-flex flex-column align-items-stretch col">
+        <h5 class="font-weight-bold">{{ name }}</h5>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="price">{{ price }} грн.</p>
+          <div class="buttons btn-group">
+            <button @click="decrement" :disabled="!quantity" class="btn btn-danger">-</button>
+            <button @click="increment" class="btn btn-success">+</button>
+        </div>
+        </div>
+      </div>
+      <!-- <p>In bucket<span class="badge badge-success mx-1">{{ quantity }}</span></p> -->
     </div>
   </div>
 </template>
@@ -30,12 +38,6 @@ export default {
 <style scoped lang="scss">
   .buttons { font-size: 2rem; }
   p { margin: 0; }
-  .image {
-    max-width: 50%;
-    max-height: 50%;
-  }
-  .hryvna::after {
-    margin-left: 2px;
-    content: '₴'
-  }
+  .price { font-size: 16px;}
+  .image { object-fit: contain; }
 </style>
