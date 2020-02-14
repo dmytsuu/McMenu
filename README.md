@@ -15,6 +15,8 @@ yarn install
 rails db:create
 rails db:seed
 
+foreman start
+OR (in different tabs)
 rails s
 ./bin/webpack-dev-server
 ```
