@@ -1,19 +1,33 @@
 <template lang="html">
-  <div class="d-flex flex-column justify-content-around align-items-center">
-    <img :src="image || placeholder" alt="picture" class="image cursor-pointer">
-    <p>{{ name }}</p>
-    <p class="hryvna">{{ price }}</p>
-    <p>In bucket<span class="badge badge-success mx-1">{{ quantity }}</span></p>
-    <div class="buttons btn-group w-100">
-      <button @click="decrement" :disabled="!quantity" class="btn btn-danger">-</button>
-      <button @click="increment" class="btn btn-success">+</button>
+  <div class="container-fluid">
+    <div class="row flex-column rounded-smooth justify-content-center align-items-center mx-1 p-3 shadow h-100 flex-nowrap">
+      <div class="col-7">
+        <img :src="image || placeholder" alt="picture" class="w-100">
+      </div>
+      <div class="align-self-start d-flex flex-column align-items-stretch col">
+        <h5 class="font-weight-bold">{{ name }}</h5>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="price">{{ price }} грн.</p>
+          <div class="buttons">
+            <button @click="decrement" :disabled="!quantity" class="btn btn-sm btn-danger rounded-smooth">
+              <b-icon icon="dash"></b-icon>
+            </button>
+            <button @click="increment" class="btn btn-sm btn-success rounded-smooth">
+              <b-icon icon="plus"></b-icon>
+            </button>
+        </div>
+        </div>
+      </div>
+      <!-- <p>In bucket<span class="badge badge-success mx-1">{{ quantity }}</span></p> -->
     </div>
   </div>
 </template>
 
 <script>
+import { BIcon, BIconPlus, BIconDash } from 'bootstrap-vue'
 export default {
   name: 'Product',
+  components: { BIcon, BIconPlus, BIconDash },
   data () {
     // TODO: use constants
     return { placeholder: 'https://img-global.cpcdn.com/recipes/5520605ad8c12747c2fbd83a362a03a16695fedbee0c05bd73d7a3049444b60f/1200x630cq70/photo.jpg' }
@@ -30,12 +44,6 @@ export default {
 <style scoped lang="scss">
   .buttons { font-size: 2rem; }
   p { margin: 0; }
-  .image {
-    max-width: 50%;
-    max-height: 50%;
-  }
-  .hryvna::after {
-    margin-left: 2px;
-    content: '₴'
-  }
+  .price { font-size: 16px;}
+  .image { object-fit: contain; }
 </style>

@@ -1,11 +1,13 @@
 <template>
-  <div class="products-board container">
-    <Bucket/>
-    <div class="row">
-      <Product v-for="product in byKind"
-               v-bind="product"
-               :key="product.id"
-               class="col-md-3 product my-1"/>
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <Navbar class="col-12 mb-3"/>
+        <Product v-for="product in byKind"
+        v-bind="product"
+        :key="product.id"
+        class="col-md-6 p-3 product"/>
+      </div>
     </div>
   </div>
 </template>
@@ -14,11 +16,11 @@
 import axios from 'axios'
 import { mapGetters } from 'vuex'
 import Product from './Product.vue'
-import Bucket from './Bucket.vue'
+import Navbar from './Navbar.vue'
 
 export default {
   name: 'ProductsBoard',
-  components: { Product, Bucket },
+  components: { Product, Navbar },
   computed: mapGetters(['byKind']),
   async created () {
     if (this.byKind.length) return
@@ -33,6 +35,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .products-board { margin-top: 56px; }
-  .product { height: 340px; }
+  .product { height: 300px; }
 </style>
