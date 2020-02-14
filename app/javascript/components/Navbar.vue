@@ -47,19 +47,16 @@ export default {
 <style lang="scss">
   .search-and-filters { height: 72px; }
   .dropdown-menu-custom {
-    width: 250px;
+    width: 350px;
     font-size: 1.25rem;
   }
   a.dropdown-item {
+    text-indent: 1rem;
     color: #495057;
     &:active {
       background-color: #ececec;
       color: inherit;
     }
   }
-  .filter-icon {
-    font-size: 1.25rem;
-    // transition: font-size 1s;
-    // &:hover { font-size: 2.5rem; }
-  }
+  .filter-icon { font-size: 1.25rem; }
 </style>
