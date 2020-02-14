@@ -63,12 +63,8 @@ export default {
     }
   },
   computed: {
-    ...mapGetters([
-      'bucketProducts', 'totalPrice'
-    ]),
-    submitButtonText () {
-      return this.isSubmitDisabled ? 'Submiting' : `Order ${this.totalPrice} ₴`
-    },
+    ...mapGetters(['bucketProducts', 'totalPrice']),
+    submitButtonText () { return this.isSubmitDisabled ? 'Submiting' : `Order ${this.totalPrice} ₴` },
     username () { return this.$store.state.username }
   }
 }
