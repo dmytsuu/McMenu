@@ -1,5 +1,5 @@
 <template lang="html">
-  <div @mouseenter="toggleBucket" @mouseleave="toggleBucket" v-bind:class="{ 'bucket-opened': isBucketShown }" class="bucket container-fluid fixed rounded border bg-white">
+  <div @mouseover="showBucket" @mouseleave="hideBucket" :class="{ 'bucket-opened': isBucketShown }" class="bucket container-fluid fixed rounded border bg-white">
     <div v-bind:class="{ 'd-none': !isBucketShown }" class="row no-gutters flex-column align-items-center p-3">
       <div class="col">
         <h5 class="text-center">Bucket</h5>
@@ -37,9 +37,11 @@ export default {
   },
   methods: {
     // TODO: refactor this shit
-    toggleBucket () { this.isBucketShown = !this.isBucketShown },
+    showBucket () { this.isBucketShown = true },
+    hideBucket () { setTimeout(() => this.isBucketShown = false, 500) },
     async submit () {
-      this.isSubmitDisabled = true;
+      this.isSubmitDisabled = true
+      // TODO: use constants for url, refactor Swal
       await axios.post('http://localhost:3000/buckets/create', { products: this.bucketProducts, name: this.username }).then(res => {
         Swal.fire(
           'Awesome!',

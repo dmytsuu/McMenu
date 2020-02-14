@@ -19,6 +19,9 @@ export default {
     Navbar,
     NameModal
   },
-  mounted () { this.$bvModal.show('name-modal') }
+  mounted () {
+    if (this.$store.state.username) { return }
+    this.$bvModal.show('name-modal')
+  }
 }
 </script>

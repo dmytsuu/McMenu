@@ -1,20 +1,23 @@
 <template lang="html">
-  <nav class="navbar flex-column fixed-top navbar-light bg-white justify-content-center">
-    <input class="form-control product-search" placeholder="Find item" @input="searchProducts" v-model="searchKeyword">
-    <span v-if="username">Welcome {{ username }}</span>
-    <ul class="nav mt-2">
-      <li v-for="kind in kinds" @click="selectKind(kind)" class="nav-item nav-link shadow-sm text-capitalize cursor-pointer mr-2">{{ kind }}</li>
+  <nav class="navbar fixed-top navbar-dark bg-dark justify-content-center">
+    <ul class="navbar-nav flex-row">
+      <li v-for="kind in kinds" @click="selectKind(kind)" class="nav-item nav-link cursor-pointer px-2">{{ kind }}</li>
     </ul>
+    <form class="form-inline ml-3">
+      <input class="form-control d-inline-block" placeholder="Find item" @input="searchProducts" v-model="searchKeyword">
+    </form>
   </nav>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'Navbar',
   data () {
     return {
       searchKeyword: '',
-      kinds: ['all', 'menus', 'burgers', 'rolls', 'fries', 'snacks', 'salads', 'desserts', 'cold_desserts', 'drinks', 'hot_drinks', 'happy_meal', 'souces']
+      kinds: ['All', 'Menus', 'Burgers', 'Rolls', 'Fries', 'Snacks', 'Salads', 'Desserts', 'Cold Desserts', 'Drinks', 'Hot Drinks', 'Happy Meal', 'Souces']
     }
   },
   methods: {
@@ -25,12 +28,9 @@ export default {
       this.$store.commit('setKind', kind)
     }
   },
-  computed: {
-    username () { return this.$store.state.username }
-  }
+  computed: mapState(['username'])
 }
 </script>
 
 <style lang="scss">
-  .product-search { width: 400px !important; }
 </style>

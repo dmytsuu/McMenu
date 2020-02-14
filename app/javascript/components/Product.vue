@@ -2,10 +2,11 @@
   <div class="d-flex flex-column justify-content-around align-items-center">
     <img :src="image || placeholder" alt="picture" class="image cursor-pointer">
     <p>{{ name }}</p>
-    <p class="hryvna">{{ price }} <span class="badge badge-success">{{ quantity }}</span> </p>
+    <p class="hryvna">{{ price }}</p>
+    <p>In bucket<span class="badge badge-success mx-1">{{ quantity }}</span></p>
     <div class="buttons btn-group w-100">
-      <button @click="decrement" :disabled="quantity === 0" class="btn btn-danger w-50">-</button>
-      <button @click="increment" class="btn btn-success w-50">+</button>
+      <button @click="decrement" :disabled="!quantity" class="btn btn-danger">-</button>
+      <button @click="increment" class="btn btn-success">+</button>
     </div>
   </div>
 </template>
@@ -14,12 +15,14 @@
 export default {
   name: 'Product',
   data () {
+    // TODO: use constants
     return { placeholder: 'https://img-global.cpcdn.com/recipes/5520605ad8c12747c2fbd83a362a03a16695fedbee0c05bd73d7a3049444b60f/1200x630cq70/photo.jpg' }
   },
   props: ['id', 'name', 'price', 'image', 'quantity'],
   methods: {
-    increment () { this.$store.commit('changeProductCount', { id: this.id, quantity: this.quantity + 1 }) },
-    decrement () { this.$store.commit('changeProductCount', { id: this.id, quantity: this.quantity - 1 }) }
+    increment () { this.changeProductCountBy(1) },
+    decrement () { this.changeProductCountBy(-1) },
+    changeProductCountBy (number) { this.$store.commit('changeProductCount', { id: this.id, quantity: this.quantity + number }) }
   }
 }
 </script>
@@ -28,8 +31,8 @@ export default {
   .buttons { font-size: 2rem; }
   p { margin: 0; }
   .image {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 50%;
+    max-height: 50%;
   }
   .hryvna::after {
     margin-left: 2px;
