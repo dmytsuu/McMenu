@@ -9,16 +9,15 @@
         <div class="d-flex justify-content-between align-items-center">
           <p class="price">{{ price }} грн.</p>
           <div class="buttons">
-            <button @click="decrement" :disabled="!quantity" class="btn btn-sm btn-danger rounded-smooth">
+            <button @click="decrement" :disabled="!quantity" class="btn btn-sm btn-danger rounded-pill">
               <b-icon icon="dash"></b-icon>
             </button>
-            <button @click="increment" class="btn btn-sm btn-success rounded-smooth">
+            <button @click="increment" class="btn btn-sm btn-success rounded-pill">
               <b-icon icon="plus"></b-icon>
             </button>
         </div>
         </div>
       </div>
-      <!-- <p>In bucket<span class="badge badge-success mx-1">{{ quantity }}</span></p> -->
     </div>
   </div>
 </template>
