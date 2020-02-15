@@ -16,5 +16,6 @@ export default {
     top: 1rem;
     right: 1rem;
     height: 56px;
+    width: 56px;
   }
 </style>
