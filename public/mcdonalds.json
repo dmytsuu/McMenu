@@ -14,123 +14,146 @@
   "burgers": [
     {
       "name": "Біг Мак®",
-      "price": 58.0
+      "price": 58.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Біг Тейсті®",
-      "price": 90.0
+      "price": 90.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Бургер зі свининою та солоними огірками",
-      "price": 70.0
+      "price": 70.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Бургер з куркою та медовою гірчицею",
-      "price": 63.0
+      "price": 63.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Маестро Класік®",
-      "price": 92.0
+      "price": 92.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Філе-о-фіш®",
-      "price": 52.0
+      "price": 52.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "МакЧікен®",
-      "price": 52.0
+      "price": 52.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Чізбургер",
-      "price": 30.0
+      "price": 30.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Дабл Чізбургер",
-      "price": 52.0
+      "price": 52.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Чізбургер з беконом",
-      "price": 37.0
+      "price": 37.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     },
     {
       "name": "Гамбургер",
-      "price": 26.0
+      "price": 26.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_DoubleCheeseburger.png"
     }
   ],
   "rolls": [
     {
       "name": "Чікен Рол",
-      "price": 64.0
+      "price": 64.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.RollChicken.png"
     },
     {
       "name": "Фіш Фреш Рол",
-      "price": 64.0
+      "price": 64.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.RollFish.png"
     },
     {
       "name": "Рол з креветками",
-      "price": 72.0
+      "price": 72.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.ShrimpRoll.png"
     }
   ],
   "fries": [
     {
       "name": "Картопля Фрі МАЛЕНЬКА",
-      "price": 25.0
+      "price": 25.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.FFLarge.png"
     },
     {
       "name": "Картопля Фрі СЕРЕДНЯ",
-      "price": 29.0
+      "price": 29.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.FFLarge.png"
     },
     {
       "name": "Картопля Фрі ВЕЛИКА",
-      "price": 33.0
+      "price": 33.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.FFLarge.png"
     },
     {
       "name": "Картопляні ДІПИ",
-      "price": 38.0
+      "price": 38.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.FFLarge.png"
     },
     {
       "name": "Картопля Фрі з сирним соусом і цибулею",
-      "price": 38.0
+      "price": 38.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.FFLarge.png"
     }
   ],
   "snacks": [
     {
-      "name": "МакНагетс Бокс",
-      "price": 140.0
-    },
-    {
       "name": "Креветки, 5шт",
-      "price": 86.0
+      "price": 86.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Shrimps_5pc.png"
     },
     {
       "name": "Креветки 9 шт.",
-      "price": 135.0
+      "price": 135.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Shrimps_5pc.png"
     },
     {
       "name": "Сир Камамбер",
-      "price": 60.0
+      "price": 60.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Camamber_500x500.png"
     },
     {
       "name": "Чікен МакНаггетс 4шт",
-      "price": 34.0
+      "price": 34.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.ChickenMcNuggets4.png"
     },
     {
       "name": "Чікен МакНаггетс®, 6шт",
-      "price": 49.0
+      "price": 49.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.ChickenMcNuggets4.png"
     },
     {
       "name": "Чікен МакНаггетс®, 9шт",
-      "price": 68.0
+      "price": 68.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.ChickenMcNuggets4.png"
     }
   ],
   "salads": [
     {
       "name": "Салат Овочевий",
-      "price": 60.0
+      "price": 60.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SaladVegetable.png"
     },
     {
       "name": "Салат Чікен",
-      "price": 72.0
+      "price": 72.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SaladChickenPremier.png"
     }
   ],
   "desserts": [
@@ -144,98 +167,109 @@
   "cold_desserts": [
     {
       "name": "МакФлурі Орео",
-      "price": 46.0
+      "price": 46.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McFlurryKitKatChocolate.png"
     },
     {
       "name": "МакФлурі з топпінгом чорниця",
-      "price": 44.0
+      "price": 44.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McFlurryKitKatChocolate.png"
     },
     {
       "name": "МакФлурі® КІТКАТ шоколадний",
-      "price": 44.0
+      "price": 44.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McFlurryKitKatChocolate.png"
     },
     {
       "name": "МакФлурі® КІТКАТ карамельний",
-      "price": 44.0
+      "price": 44.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McFlurryKitKatChocolate.png"
     },
     {
       "name": "МакФлурі® КІТКАТ полуничний",
-      "price": 44.0
+      "price": 44.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McFlurryKitKatChocolate.png"
     },
     {
       "name": "МакСанді® з чорницею",
-      "price": 35.0
+      "price": 35.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McSundaeChoco.png"
     },
     {
       "name": "МакСанді® шоколадне",
-      "price": 33.0
+      "price": 33.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McSundaeChoco.png"
     },
     {
       "name": "МакСанді® карамельне",
-      "price": 33.0
+      "price": 33.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McSundaeChoco.png"
     },
     {
       "name": "МакСанді® полуничне",
-      "price": 33.0
+      "price": 33.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McSundaeChoco.png"
     },
     {
       "name": "МакШейк® шоколадний",
-      "price": 38.0
+      "price": 38.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McShakeStrawberryMedium.png"
     },
     {
       "name": "МакШейк® ванільний",
-      "price": 38.0
+      "price": 38.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McShakeStrawberryMedium.png"
     },
     {
       "name": "МакШейк® полуничний",
-      "price": 38.0
+      "price": 38.0,
+      "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McShakeStrawberryMedium.png"
     }
   ],
   "drinks": [
-    { "name": "Кока-Кола® ЕКОНОМ", "price": 20.0 },
-    { "name": "Кока-Кола® МАЛА", "price": 25.0 },
-    { "name": "Кока-Кола® СЕРЕДНЯ", "price": 28.0 },
-    { "name": "Фанта® ЕКОНОМ", "price": 20.0 },
-    { "name": "Фанта® МАЛА", "price": 25.0 },
-    { "name": "Фанта® СЕРЕДНЯ", "price": 28.0 },
-    { "name": "Холодний лате", "price": 32.0 },
-    { "name": "Апельсиновий сік", "price": 27.0 },
-    { "name": "Спрайт® ЕКОНОМ", "price": 20.0 },
-    { "name": "Спрайт® МАЛА", "price": 25.0 },
-    { "name": "Спрайт® СЕРЕДНЯ", "price": 28.0 }
+    { "name": "Кока-Кола® ЕКОНОМ", "price": 20.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CocaColaLarge.png" },
+    { "name": "Кока-Кола® МАЛА", "price": 25.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CocaColaLarge.png" },
+    { "name": "Кока-Кола® СЕРЕДНЯ", "price": 28.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CocaColaLarge.png" },
+    { "name": "Фанта® ЕКОНОМ", "price": 20.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.JuiceOrangeSmall.png" },
+    { "name": "Фанта® МАЛА", "price": 25.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.JuiceOrangeSmall.png" },
+    { "name": "Фанта® СЕРЕДНЯ", "price": 28.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.JuiceOrangeSmall.png" },
+    { "name": "Холодний лате", "price": 32.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.IceLatte.png" },
+    { "name": "Апельсиновий сік", "price": 27.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.JuiceOrangeSmall.png" },
+    { "name": "Спрайт® ЕКОНОМ", "price": 20.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SpriteLarge.png" },
+    { "name": "Спрайт® МАЛА", "price": 25.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SpriteLarge.png" },
+    { "name": "Спрайт® СЕРЕДНЯ", "price": 28.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SpriteLarge.png" }
   ],
   "hot_drinks": [
-    { "name": "Какао МАЛЕ", "price": 26.0 },
-    { "name": "Какао КЛАСІК", "price": 32.0 },
-    { "name": "Чай, 300мл", "price": 24.0 },
-    { "name": "Кава МакКафе Флет Вайт", "price": 32.0 },
-    { "name": "Кава МакКафе Еспресо", "price": 19.0 },
-    { "name": "Кава МакКафе Американо мале", "price": 25.0 },
-    { "name": "Кава МакКафе Американо КЛАСІК", "price": 31.0 },
-    { "name": "Кава МакКафе Американо з молоком МАЛЕ", "price": 26.0 },
-    { "name": "Кава МакКафе Американо з молоком КЛАСІК", "price": 32.0 },
-    { "name": "Кава МакКафе Капучино", "price": 26.0 },
-    { "name": "Кава МакКафе Лате МАЛЕ", "price": 26.0 },
-    { "name": "Кава МакКафе Лате КЛАСІК", "price": 32.0 }
+    { "name": "Какао МАЛЕ", "price": 26.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CocoaMedium.png" },
+    { "name": "Какао КЛАСІК", "price": 32.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CocoaMedium.png" },
+    { "name": "Чай, 300мл", "price": 24.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McC_TeaAlpine.png" },
+    { "name": "Кава МакКафе Флет Вайт", "price": 32.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Еспресо", "price": 19.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Американо мале", "price": 25.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Американо КЛАСІК", "price": 31.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Американо з молоком МАЛЕ", "price": 26.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Американо з молоком КЛАСІК", "price": 32.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Капучино", "price": 26.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Лате МАЛЕ", "price": 26.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" },
+    { "name": "Кава МакКафе Лате КЛАСІК", "price": 32.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.CoffeeCapuccinoLarge.png" }
   ],
   "happy_meal": [
-    { "name": "Хеппі Міл Гамбургер", "price": 73.0 },
-    { "name": "Хеппі Міл Чізбургер", "price": 73.0 },
-    { "name": "Хеппі Міл Чікен Макнагетс 4 шт", "price": 73.0 },
-    { "name": "Іграшка ", "price": 30.0 }
+    { "name": "Хеппі Міл Гамбургер", "price": 73.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_Hamburger.png" },
+    { "name": "Хеппі Міл Чізбургер", "price": 73.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_Hamburger.png" },
+    { "name": "Хеппі Міл Чікен Макнагетс 4 шт", "price": 73.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_Hamburger.png" },
+    { "name": "Іграшка ", "price": 30.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Sdwch_Hamburger.png" }
   ],
   "souces": [
-    { "name": "Соус Барбекю", "price": 9.0 },
-    { "name": "Соус Кисло-Солодкий", "price": 9.0 },
-    { "name": "Соус Український", "price": 9.0 },
-    { "name": "Соус Сирний", "price": 9.0 },
-    { "name": "Соус Солодкий Чилі", "price": 9.0 },
-    { "name": "Кетчуп", "price": 9.0 },
-    { "name": "Гірчиця", "price": 9.0 },
-    { "name": "Майонез", "price": 9.0 },
-    { "name": "Соус журавлиновий", "price": 9.0 },
-    { "name": "Соус 1000 островів", "price": 9.0 },
-    { "name": "Олівкова олія", "price": 9.0 },
-    { "name": "Вершки", "price": 6.0 }
+    { "name": "Соус Барбекю", "price": 9.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SauceBBQ.png" },
+    { "name": "Соус Кисло-Солодкий", "price": 9.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SauceSweet&Sour.png" },
+    { "name": "Соус Український", "price": 9.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SauceUkrainian.png" },
+    { "name": "Соус Сирний", "price": 9.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SauceCheese.png" },
+    { "name": "Соус Солодкий Чилі", "price": 9.0, "image": "https://res.cloudinary.com/glovoapp/w_680,h_240,c_fit,f_auto,q_auto/Products/ibovt8xeuwpso4chi3ex" },
+    { "name": "Кетчуп", "price": 9.0, "image": "https://res.cloudinary.com/glovoapp/w_680,h_240,c_fit,f_auto,q_auto/Products/s4jig0dfoqddwxx7ew5t" },
+    { "name": "Гірчиця", "price": 9.0, "image": "https://res.cloudinary.com/glovoapp/w_680,h_240,c_fit,f_auto,q_auto/Products/odramq8dpxlwe193vi2x" },
+    { "name": "Майонез", "price": 9.0, "image": "https://res.cloudinary.com/glovoapp/w_680,h_240,c_fit,f_auto,q_auto/Products/pdvqx0y38m6sdx4bqtvb" },
+    { "name": "Соус журавлиновий", "price": 9.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.SauceCranberry.png" },
+    { "name": "Соус 1000 островів", "price": 9.0, "image": "https://res.cloudinary.com/glovoapp/w_680,h_240,c_fit,f_auto,q_auto/Products/oc5ppisi5jniruarqwgx" },
+    { "name": "Олівкова олія", "price": 9.0, "image": "https://res.cloudinary.com/glovoapp/w_680,h_240,c_fit,f_auto,q_auto/Products/cus07ierpwqi4abfkv03" }
   ]
 }
