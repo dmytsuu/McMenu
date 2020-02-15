@@ -157,12 +157,12 @@
     }
   ],
   "desserts": [
-    { "name": "Торт \"Чізкейк\"", "price": 50.0 },
-    { "name": "Мафін® з чорною смородиною", "price": 24.0 },
-    { "name": "Мафін® з шоколадним смаком", "price": 24.0 },
-    { "name": "Печиво \"Ванільне зі шматочками шоколаду\"", "price": 23.0 },
-    { "name": "Печиво \"Шоколадне зі шматочками шоколаду\"", "price": 23.0 },
-    { "name": "МакПиріг® вишневий", "price": 24.0 }
+    { "name": "Торт \"Чізкейк\"", "price": 50.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McC_CakeCheesecakeClassic.png" },
+    { "name": "Мафін® з чорною смородиною", "price": 24.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.BKFT_McMuffinEggCheese.png" },
+    { "name": "Мафін® з шоколадним смаком", "price": 24.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.BKFT_McMuffinEggCheese.png" },
+    { "name": "Печиво \"Ванільне зі шматочками шоколаду\"", "price": 23.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Cookie%20with%20raspberry%20and%20white%20chocolate.png" },
+    { "name": "Печиво \"Шоколадне зі шматочками шоколаду\"", "price": 23.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.Cookie%20with%20raspberry%20and%20white%20chocolate.png" },
+    { "name": "МакПиріг® вишневий", "price": 24.0, "image": "https://www.mcdonalds.ua/content/dam/Ukraine/Item_Images/hero.McPieCherry.png" }
   ],
   "cold_desserts": [
     {
