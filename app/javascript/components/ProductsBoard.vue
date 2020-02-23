@@ -25,7 +25,7 @@ export default {
   async created () {
     if (this.byKind.length) return
     // TODO: use api constants
-    let res = await axios.get('http://localhost:3000/products/index')
+    let res = await axios.get('http://localhost:3000/api/products/index')
     let products = res.data.map(product => {
       return { ...product, quantity: 0 }
     })

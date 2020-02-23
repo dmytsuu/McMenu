@@ -1,7 +1,6 @@
-class Bucket
-  include Mongoid::Document
-  field :name, type: String
-
+class Bucket < ApplicationRecord
+  belongs_to :user
+  belongs_to :session
   has_many :bucket_products
 
   def products

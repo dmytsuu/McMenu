@@ -11,12 +11,16 @@ export default new Vuex.Store({
     products: [],
     kind: 'All',
     searchKeyword: '',
-    username: ''
+    user: {},
+    sessionModalAction: '',
+    session: {}
   },
   mutations: {
     setKeyword (state, keyword) { state.searchKeyword = keyword },
-    setUsername (state, username) { state.username = username },
+    setSession (state, session) { state.session = session },
+    setUsername (state, user) { state.user = user },
     setKind (state, kind) { state.kind = kind },
+    setSessionModalAction (state, action) { state.sessionModalAction = action },
     setProducts (state, products) { state.products = products },
     resetBucket (state) { state.products.forEach(product => product.quantity = 0) },
     changeProductCount (state, item) {
@@ -40,6 +44,9 @@ export default new Vuex.Store({
     byKind: (state, getters) => {
       let result = getters.foundProducts.filter(product => product.kind === state.kind)
       return state.kind === 'All' ? getters.foundProducts : result
+    },
+    isCreateSession: state => {
+      return state.sessionModalAction === 'create'
     }
   },
   plugins: [vuexLocal.plugin]

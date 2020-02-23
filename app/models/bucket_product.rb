@@ -1,5 +1,4 @@
-class BucketProduct
-  include Mongoid::Document
+class BucketProduct < ApplicationRecord
   include Mongoid::Attributes::Dynamic
   field :quantity, type: Integer
 

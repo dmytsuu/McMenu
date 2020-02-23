@@ -35,7 +35,6 @@
 </template>
 
 <script>
-
 import Swal from 'sweetalert2'
 import axios from 'axios'
 import { mapGetters } from 'vuex'
@@ -44,43 +43,28 @@ export default {
   name: 'Bucket',
   data () {
     return {
-      isSubmitDisabled: false,
-      placeholder: 'https://img-global.cpcdn.com/recipes/5520605ad8c12747c2fbd83a362a03a16695fedbee0c05bd73d7a3049444b60f/1200x630cq70/photo.jpg'
+      isSubmited: false,
     }
   },
   methods: {
-    // TODO: refactor this shit
     async submit () {
-      this.isSubmitDisabled = true
-      // TODO: use constants for url, refactor Swal
-      await axios.post('http://localhost:3000/buckets/create', { products: this.bucketProducts, name: this.username }).then(res => {
-        Swal.fire(
-          'Awesome!',
-          'Your order is created',
-          'success'
-        )
-      }).catch(err => {
-        Swal.fire(
-          'Oops...',
-          'Something went wrong!',
-          'error'
-        )
-      })
-      this.isSubmitDisabled = false
+      this.isSubmited = true
+      await axios.post('http://localhost:3000/api/buckets/create', { products: this.bucketProducts, user_id: this.userId })
+                 .then(res => Swal.fire('Awesome!', 'Your order is created', 'success'))
+                 .catch(err => Swal.fire('Oops...', 'Something went wrong!', 'error'))
+      this.isSubmited = false
     },
-    resetBucket () {
-      this.$store.commit('resetBucket')
-    }
+    resetBucket () { this.$store.commit('resetBucket') }
   },
   computed: {
     ...mapGetters(['bucketProducts', 'totalPrice']),
-    submitButtonText () { return this.isSubmitDisabled ? 'Submiting' : 'Order' },
-    username () { return this.$store.state.username }
+    isSubmitDisabled () { return !this.$store.state.session.id || !this.bucketProducts.length || this.isSubmited },
+    submitButtonText () { return this.isSubmited ? 'Submiting' : 'Order' },
+    userId () { return this.$store.state.user.id }
   }
 }
 </script>
 
 <style scoped lang="scss">
-  // .bucket { min-height: 275px; }
   .product { font-size: 17px; }
 </style>

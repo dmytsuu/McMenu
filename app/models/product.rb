@@ -1,5 +1,4 @@
-class Product
-  include Mongoid::Document
+class Product < ApplicationRecord
   field :name, type: String
   field :kind, type: String
   field :price, type: Integer
